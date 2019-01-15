@@ -1,0 +1,6 @@
+framework module Pods_VUIComponents_Swift_Tests {
+  umbrella header "Pods-VUIComponents-Swift_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

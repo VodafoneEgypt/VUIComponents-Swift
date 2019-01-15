@@ -1,0 +1,6 @@
+framework module VUIComponents_Swift {
+  umbrella header "VUIComponents-Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

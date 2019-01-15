@@ -1,0 +1,31 @@
+{
+  "name": "VUIComponents-Swift",
+  "version": "0.1.1",
+  "summary": "Pod contains UI components developed in swift language",
+  "description": "A pod contains all swift UI components you need to use",
+  "homepage": "https://github.com/VodafoneEgypt/VUIComponents-Swift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "VodafoneEgypt": "egypt.apps@vodafone.com"
+  },
+  "source": {
+    "git": "https://github.com/VodafoneEgypt/VUIComponents-Swift.git",
+    "tag": "0.1.1"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "VUIComponents-Swift/Classes/**/*.{swift}",
+  "resources": "VUIComponents-Swift/Classes/**/*.{xib}",
+  "dependencies": {
+    "VUIComponents": [
+
+    ],
+    "SnapKit": [
+
+    ]
+  }
+}

@@ -1,5 +1,5 @@
 import XCTest
-import VUIComponents-Swift
+import VUIComponents_Swift
 
 class Tests: XCTestCase {
     
