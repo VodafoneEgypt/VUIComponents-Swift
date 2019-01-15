@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'VUIComponents-Swift_Example' do
+  pod 'VUIComponents-Swift', :path => '../'
+
+  target 'VUIComponents-Swift_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
