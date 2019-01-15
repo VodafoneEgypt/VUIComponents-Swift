@@ -9,13 +9,13 @@
 import UIKit
 import VUIComponents
 
-class RatePlanDetailTableViewCell: UITableViewCell {
+public class RatePlanDetailTableViewCell: UITableViewCell {
 
     @IBOutlet weak var detailImageView: UIImageView!
     @IBOutlet weak var detailTitleLabel: AnaVodafoneLabel!
     @IBOutlet weak var detailTitleLableHeightConstraint: NSLayoutConstraint!
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
     }
     

@@ -10,12 +10,12 @@ import UIKit
 import VUIComponents
 import Languagehandlerpod
 
-class RatePlanCardTabelModel : NSObject {
+public class RatePlanCardTabelModel : NSObject {
     var img: String = ""
     var title: NSMutableAttributedString = NSMutableAttributedString(string: "")
 }
 
-class RatePlanCardView: ExpandableBaseCardViewWithButtons {
+public class RatePlanCardView: ExpandableBaseCardViewWithButtons {
     
     //MARK: Outlets
     @IBOutlet weak private var titleLabel: AnaVodafoneLabel!
@@ -140,7 +140,7 @@ class RatePlanCardView: ExpandableBaseCardViewWithButtons {
     //------------------------------------------------------------------
     
     //MARK: Height Adjustment
-    override func initializeContentView() {
+    override public func initializeContentView() {
         
         adjustHeights()
         
@@ -165,7 +165,7 @@ class RatePlanCardView: ExpandableBaseCardViewWithButtons {
         self.setContentViewHeight(contentViewHeight)
     }
     
-    override func initializeExpandedView() {
+    override public func initializeExpandedView() {
         self.setExpandViewHeigh(CGFloat(tableViewData.count * 79) + 15)
     }
     
@@ -254,7 +254,7 @@ class RatePlanCardView: ExpandableBaseCardViewWithButtons {
         self.commonInit()
     }
     
-    override func commonInit() {
+    override public func commonInit() {
         guard let view = Bundle.main.loadNibNamed("RatePlanCardView", owner: self, options: nil)?[0] as? UIView else {
             return
         }
@@ -292,7 +292,7 @@ class RatePlanCardView: ExpandableBaseCardViewWithButtons {
 
 
 extension RatePlanCardView : UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableViewData.count
     }
     
@@ -300,7 +300,7 @@ extension RatePlanCardView : UITableViewDataSource, UITableViewDelegate {
         return 79
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RatePlanDetailTableViewCell", for: indexPath) as! RatePlanDetailTableViewCell
         cell.setContent(detailModel: tableViewData[indexPath.row])
         return cell

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'VUIComponents-Swift'
-    s.version          = '0.1.1'
+    s.version          = '0.1.2'
     s.summary          = 'Pod contains UI components developed in swift language'
     s.description      = 'A pod contains all swift UI components you need to use'
     s.homepage         = 'https://github.com/VodafoneEgypt/VUIComponents-Swift'

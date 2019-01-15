@@ -21,7 +21,7 @@ PODS:
     - RSKImageCropper
     - "UIColor+Hex"
     - WYPopoverController (~> 0.3.9)
-  - VUIComponents-Swift (0.1.1):
+  - VUIComponents-Swift (0.1.2):
     - SnapKit
     - VUIComponents
   - WYPopoverController (0.3.9)
@@ -57,7 +57,7 @@ SPEC CHECKSUMS:
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   "UIColor+Hex": 9fee91bb8e19f17dd40a79ae1e98949a6a84489d
   VUIComponents: b5543558f2c592e0068c5e21928161a848005115
-  VUIComponents-Swift: ac3723c0bf5784762dfa55338b1c6801ba37ad9a
+  VUIComponents-Swift: f816f067e25c6b426970f28f01e2666302310c85
   WYPopoverController: a9db25ac2841a686acdc0f3a99bdb21545db32f4
 
 PODFILE CHECKSUM: 60bb9a5fd5f3ede3adf24863aef31d5def94658c

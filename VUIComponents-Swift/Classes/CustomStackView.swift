@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import SnapKit
 
-class CustomStackView: UIView {
+public class CustomStackView: UIView {
     
     var isSeparatorShow = true
     
