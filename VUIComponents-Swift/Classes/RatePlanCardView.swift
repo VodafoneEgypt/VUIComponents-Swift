@@ -69,35 +69,35 @@ public class RatePlanCardView: ExpandableBaseCardViewWithButtons {
     private var infoImg = ""
     private var showMoreLessString = ""
     private var tableViewData = [RatePlanCardTabelModel]()
-    var isGrandfather = false
+    public var isGrandfather = false
     //------------------------------------------------------------------
     
     //MARK: Setters
-    func setTitleString(_ title: NSAttributedString) {
+    public func setTitleString(_ title: NSAttributedString) {
         titleLabel.attributedText = title
         titleString = title.string
         self.initialize()
     }
     
-    func setFeesString(_ fees: NSAttributedString) {
+    public func setFeesString(_ fees: NSAttributedString) {
         feesLabel.attributedText = fees
         feesString = fees.string
         self.initialize()
     }
     
-    func setDescriptionString(_ desc: NSAttributedString) {
+    public func setDescriptionString(_ desc: NSAttributedString) {
         descriptionLabel.attributedText = desc
         descriptionString = desc.string
         self.initialize()
     }
     
-    func setSubDescriptionString(_ subDesc: NSAttributedString) {
+    public func setSubDescriptionString(_ subDesc: NSAttributedString) {
         subDescriptionLabel.attributedText = subDesc
         subDescriptionString = subDesc.string
         self.initialize()
     }
     
-    func setInfoViewImage(_ image: String, andInfoText infoText: NSAttributedString) {
+    public func setInfoViewImage(_ image: String, andInfoText infoText: NSAttributedString) {
         infoImageView.image = UIImage(named: image)
         infoLabel.attributedText = infoText
         infoImg = image
@@ -105,7 +105,7 @@ public class RatePlanCardView: ExpandableBaseCardViewWithButtons {
         self.initialize()
     }
     
-    func setTabelViewData(data: [RatePlanCardTabelModel]) {
+    public func setTabelViewData(data: [RatePlanCardTabelModel]) {
         tableViewData = data
         expandedViewContentTableView.register(UINib(nibName: "RatePlanDetailTableViewCell", bundle: nil), forCellReuseIdentifier: "RatePlanDetailTableViewCell")
         expandedViewContentTableView.delegate = self
@@ -134,7 +134,7 @@ public class RatePlanCardView: ExpandableBaseCardViewWithButtons {
         self.expanded = isExpanded
     }
     
-    func addRatePlanCards(cards: [UIView]) {
+    public func addRatePlanCards(cards: [UIView]) {
         customStackView.createStackWith(viewsArr: cards)
     }
     //------------------------------------------------------------------
@@ -169,7 +169,7 @@ public class RatePlanCardView: ExpandableBaseCardViewWithButtons {
         self.setExpandViewHeigh(CGFloat(tableViewData.count * 79) + 15)
     }
     
-    func adjustHeights() {
+    public func adjustHeights() {
         
         if titleString != "" {
             titleLabel.adjustHeight()
@@ -264,7 +264,7 @@ public class RatePlanCardView: ExpandableBaseCardViewWithButtons {
         self.addSubview(view)
     }
     
-    func prepView() {
+    public func prepView() {
         outerViewCustomStackView.layer.borderWidth = 1
         outerViewCustomStackView.layer.borderColor = UIColor(hexString: "CCCCCC")?.cgColor
         
@@ -296,7 +296,7 @@ extension RatePlanCardView : UITableViewDataSource, UITableViewDelegate {
         return tableViewData.count
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 79
     }
     

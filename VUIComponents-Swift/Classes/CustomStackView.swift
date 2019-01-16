@@ -12,7 +12,7 @@ import SnapKit
 
 public class CustomStackView: UIView {
     
-    var isSeparatorShow = true
+    public var isSeparatorShow = true
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -27,7 +27,7 @@ public class CustomStackView: UIView {
     }
     
     
-    func commonInit() {
+    public func commonInit() {
         
         guard let view = Bundle.main.loadNibNamed("CustomStackView", owner: self, options: nil)?.first as? UIView else {
             return
@@ -37,7 +37,7 @@ public class CustomStackView: UIView {
     }
     
     
-    func createStackWith(viewsArr: [UIView]) {
+    public func createStackWith(viewsArr: [UIView]) {
 
         let stackview = UIStackView(arrangedSubviews: viewsArr)
         var separatorCounter = 0

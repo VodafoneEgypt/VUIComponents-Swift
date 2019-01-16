@@ -19,7 +19,7 @@ public class RatePlanDetailTableViewCell: UITableViewCell {
         super.awakeFromNib()
     }
     
-    func setContent(detailModel: RatePlanCardTabelModel) {
+    public func setContent(detailModel: RatePlanCardTabelModel) {
         detailImageView.image = UIImage(named: detailModel.img)
         detailTitleLabel.attributedText = detailModel.title
     }
