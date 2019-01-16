@@ -11,8 +11,8 @@ import VUIComponents
 import Languagehandlerpod
 
 public class RatePlanCardTabelModel : NSObject {
-    var img: String = ""
-    var title: NSMutableAttributedString = NSMutableAttributedString(string: "")
+    public var img: String = ""
+    public var title: NSMutableAttributedString = NSMutableAttributedString(string: "")
 }
 
 public class RatePlanCardView: ExpandableBaseCardViewWithButtons {
